@@ -1,0 +1,80 @@
+*{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+}
+body{
+  font-family: sans-serif;
+}
+.firsturl{
+  background-image:url("https://i.pinimg.com/originals/52/c5/d2/52c5d24be22a023740fa7d52a6c0c2c6.jpg");
+}
+.secsturl{
+  background-image:url("https://s.itl.cat/pngfile/s/247-2476801_galaxy-tree.jpg");
+}
+.thrsturl{
+  background-image:url("https://i.pinimg.com/originals/b2/c2/12/b2c2125fbbab412d4c536fd327a1e440.jpg");
+}
+.box{
+  width:300px;
+  height: 70vh;
+  border: 1px solid black;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin:15vh auto;
+  position: relative;
+  box-shadow: 1px 1px 10px black;
+  border: none;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items:center;
+}
+.box::after{
+  content: "";
+  background-color: rgba(0, 0, 0, 0.6);
+  height:100%;
+  width:100%;
+  position: absolute;
+  top:0;
+  left:0;
+}
+.box i{
+  position: relative;
+  margin:0 auto 20px;
+  color:white;
+  background-color: black;
+  padding:15px;
+  border-radius: 50%;
+  border: 1px solid white;
+  cursor: pointer;
+  z-index:2;
+}
+.box textarea{
+  position: relative;
+  z-index: 2;
+  background-color: transparent;
+  border: none;
+  width:100%;
+  height:20%;
+  padding:10px;
+  font-size: 18px;
+  color:white;
+}
+.box textarea:focus{
+  outline: none;
+}
+.entering{
+  position: absolute;
+  z-index: 100;
+  top:30%;
+  left:0;
+  transform: translate(0,-50%);
+  color:white;
+  padding:20px;
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 1.5;
+}
